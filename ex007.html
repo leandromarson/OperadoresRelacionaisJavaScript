@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores em Java Script</title>
+    <style>
+        body{
+            background-color: rgb(65, 90, 110);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(104, 32, 32);/*Comentario CSS*/
+        }
+        h2{
+            color: rgb(143, 132, 35);/*Comentario CSS*/
+        }
+        strong{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <script>
+        document.writeln("<h1>Operadores em Java Script</h1>")
+        var n1 = Number(prompt("Insira um valor!"))
+        var n2 = Number(prompt("Insira outro valor!"))
+
+        var maior = n1>n2
+        var menor = n1<n2
+        var maiorigual = n1>=n2
+        var menorigual = n1<=n2
+        var igual = n1==n2
+        var diferente = n1!=n2
+        var identidade = 5 === '5'
+        var desigual = 5 !== '5'
+
+        document.writeln(`<h2>${n1} > ${n2}?: ${maior}</h2>`)
+        document.writeln(`<h2>${n1} < ${n2}?: ${menor}</h2>`)
+        document.writeln(`<h2>${n1} >= ${n2}?: ${maiorigual}</h2>`)
+        document.writeln(`<h2>${n1} <= ${n2}?: ${menorigual}</h2>`)
+        document.writeln(`<h2>${n1} == ${n2}?: ${igual}</h2>`)
+        document.writeln(`<h2>${n1} != ${n2}?: ${diferente}</h2>`)
+        document.writeln(`<h2>5 === '5'?: ${identidade}</h2>`)
+        document.writeln(`<h2>5 !== '5'?: ${desigual}</h2>`)
+    
+    </script>
+</body>
+</html>
